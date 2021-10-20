@@ -1,0 +1,1 @@
+In this project, I'll be creating a web page from a design I've been provided with. From this project, I hope to develop some familiarity with CSS and in particular, with flexbox tools. 

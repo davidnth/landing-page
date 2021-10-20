@@ -1,0 +1,87 @@
+.body{
+    display: flex;
+}
+.header{ /*red*/
+    display: flex;
+    flex-direction: column;
+    font-style: hero;
+    color: #F9FAF8;
+    background-color: #1F2937;
+    border: solid red;
+}
+
+.header-logo{
+    font-size: 18px;
+
+}
+
+.intro{ /*green*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 300px;
+    padding: 5% 10%;
+    border: solid green;
+
+}
+
+.intro-left{
+    flex: 1;
+    border: solid black;
+
+}
+
+.intro-left h1{
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+    padding: 0;
+    margin: 0;
+}
+
+.intro-left p{
+    font-size: 18px;
+    color: #E5E7EB
+}
+
+.intro-left .signup{
+    background-color: #3882F6;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.intro-right{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    border: solid red;
+    flex: 1;
+
+}
+
+
+
+.header-links{ /* blue */
+    display: flex;
+    align-items: center;
+    border: solid blue;
+    
+
+}
+
+.header-links ul{
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin-left: auto;
+    border: solid green;
+}
+
+.header-links li{
+    list-style-type: none;
+}
+
+.header-links li a{
+    text-decoration: none;
+    color: #F9FAF8
+}
