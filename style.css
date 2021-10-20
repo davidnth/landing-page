@@ -18,7 +18,7 @@
 .intro{ /*green*/
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     height: 300px;
     padding: 5% 10%;
     border: solid green;
@@ -51,9 +51,10 @@
 }
 
 .intro-right{
+    
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     border: solid red;
     flex: 1;
 
