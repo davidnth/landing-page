@@ -1,13 +1,15 @@
-.body{
+body{
     display: flex;
+    flex-direction: column;
+    margin: 0;
 }
+
 .header{ /*red*/
     display: flex;
     flex-direction: column;
     font-style: hero;
     color: #F9FAF8;
     background-color: #1F2937;
-    border: solid red;
 }
 
 .header-logo{
@@ -21,19 +23,15 @@
     align-items: stretch;
     height: 300px;
     padding: 5% 10%;
-    border: solid green;
-
 }
 
 .intro-left{
     flex: 1;
-    border: solid black;
-
 }
 
 .intro-left h1{
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: 800;
     color: #F9FAF8;
     padding: 0;
     margin: 0;
@@ -55,7 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid red;
+    background: grey;
     flex: 1;
 
 }
@@ -64,10 +62,7 @@
 
 .header-links{ /* blue */
     display: flex;
-    align-items: center;
-    border: solid blue;
-    
-
+    align-items: center;  
 }
 
 .header-links ul{
@@ -75,7 +70,7 @@
     gap: 16px;
     padding: 0;
     margin-left: auto;
-    border: solid green;
+
 }
 
 .header-links li{
@@ -85,4 +80,98 @@
 .header-links li a{
     text-decoration: none;
     color: #F9FAF8
+}
+
+.main .heading{
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+    color: #1F2937;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding: 10%;
+    margin-top: -8%;
+}
+
+.card{
+    width: 150px;
+    font-style: Hero;
+}
+
+.imageplaceholder{
+    width: 150px;
+    height: 150px;
+    display: block;
+    border: solid #3882F6;
+    border-radius: 10px;
+}
+
+.subtext{
+    padding: 5px;
+}
+
+.quote{
+    background-color: #E5E7EB;
+    padding: 10%;
+}
+
+.mainquote{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: light;
+    color: #1F2937
+}
+
+.person{
+    color: #1f2937;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+
+.callcontainer{
+    padding: 8% 0;
+}
+.call{
+    display: flex;
+    background-color: #3882F6;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.calltext{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.callprimary{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.signupbutton{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-weight: bold;
+    padding: 5px 30px;
+    border: solid white 2px;
+    border-radius: 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
+    background-color: #1F2937;
+    color: white;
 }
