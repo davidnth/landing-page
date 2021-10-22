@@ -2,27 +2,30 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.header{ /*red*/
+.header, .heading .container, .quote, .call, .footer{
+    padding: 0% 12%;
+}
+
+.header{ 
     display: flex;
     flex-direction: column;
-    font-style: hero;
     color: #F9FAF8;
     background-color: #1F2937;
 }
 
 .header-logo{
     font-size: 18px;
-
 }
 
-.intro{ /*green*/
+.intro{ 
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    height: 300px;
-    padding: 5% 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .intro-left{
@@ -43,24 +46,27 @@ body{
 }
 
 .intro-left .signup{
-    background-color: #3882F6;
+    background-color: grey;
     padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.intro-left .signup:hover{
+    background-color: #e5e7eb;
+    color: #1f2937;
     border-radius: 8px;
 }
 
-.intro-right{
-    
+.intro-right{  
     display: flex;
     justify-content: center;
     align-items: center;
     background: grey;
     flex: 1;
-
 }
 
-
-
-.header-links{ /* blue */
+.header-links{ 
     display: flex;
     align-items: center;  
 }
@@ -70,7 +76,6 @@ body{
     gap: 16px;
     padding: 0;
     margin-left: auto;
-
 }
 
 .header-links li{
@@ -91,41 +96,41 @@ body{
     padding-bottom: 1%;
 }
 
-
 .container{
     display: flex;
-    justify-content: space-around;
-    padding: 10%;
-    margin-top: -8%;
+    justify-content: space-evenly;
+    padding: 3% 15%;
 }
 
 .card{
     width: 150px;
-    font-style: Hero;
 }
 
 .imageplaceholder{
     width: 150px;
     height: 150px;
     display: block;
-    border: solid #3882F6;
+    border: #3882F6 solid;
     border-radius: 10px;
 }
 
 .subtext{
     padding: 5px;
+    text-align: center;
 }
 
 .quote{
+    padding-top: 10%;
     background-color: #E5E7EB;
-    padding: 10%;
+    display: flex;
+    flex-direction: column;
 }
 
 .mainquote{
     font-size: 36px;
     font-style: italic;
-    font-weight: light;
-    color: #1F2937
+    font-weight: 100;
+    color: #1F2937;
 }
 
 .person{
@@ -133,18 +138,23 @@ body{
     font-weight: bold;
     display: flex;
     justify-content: flex-end;
+    align-items: flex-start;
     font-size: 20px;
+    padding-bottom: 10%;
+    padding-right: 2%;
 }
 
 .callcontainer{
-    padding: 8% 0;
+    padding: 8% 13%;
 }
 .call{
     display: flex;
     background-color: #3882F6;
+    border-radius: 10px;
     align-items: center;
     justify-content: space-between;
-    padding: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .calltext{
@@ -159,13 +169,30 @@ body{
 }
 
 .signupbutton{
-    display: flex;
-    justify-content: flex-end;
     color: white;
     font-weight: bold;
-    padding: 5px 30px;
-    border: solid white 2px;
+    border: solid white 1px;
     border-radius: 10px;
+}
+
+.signupbutton:hover{
+    background-color: white;
+    color: #3882F6;
+    border: solid white 1px;
+    border-radius: 10px;
+}
+
+.signupbutton a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 30px;
+}
+
+a:visited{
+    text-decoration: none;
+    color: inherit; 
 }
 
 .footer{
@@ -175,3 +202,4 @@ body{
     background-color: #1F2937;
     color: white;
 }
+
